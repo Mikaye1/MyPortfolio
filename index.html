@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mikayel's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="pictures/i.ico">
+</head>
+<body>
+    <section class="banner mainImg" id="sec">
+        <header>
+            <a href="https://misho.am" class="logo"><img src="pictures/misho_logo (white).png" alt=""></a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hello Universe, <br>I'm <span>Mikayel Abrahamyan</span></h2>
+            <p>A software developer with a medical degree and a stage name.<br>
+                Hi, I'm Mikayel Abrahamyan. I hate talking about myself, but I was told it's necessary here :] Prior to moving to the U.S. I was a doctor and a musical artist; upon moving here, I followed another passion of mine and studied software development. I knew that with my unique background and resources, I would have a lot to offer in this field. I mostly work with Java, Kotlin, JS, HTML, CSS...</p>
+            <a href="https://en.wikipedia.org/wiki/Misho" target="_blank">know more</a>
+        </div>
+        <ul class="sci">
+            <li><a href="https://github.com/Mikaye1" target="_blank"><img src="pictures/gitttttt.png" alt=""></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/mikayel-abrahamyan-098762217/" target="_blank"><img src="pictures/linkedInnnnnnnnnn.png" alt="" ></a>
+            </li>
+            <li><a href="https://www.youtube.com/user/HayTeamOfficial" target="_blank"><img src="pictures/tube.png" alt=""></a>
+            </li>
+            <li><a href="https://open.spotify.com/artist/6w2IgUhZQo2EFdEnW6O7NF?si=OBomGWZ6QRGslhBGtvV8vA" target="_blank"><img src="pictures/music.png" alt=""></a>
+            </li>
+            <li><a href="contactUs.html"><img src="pictures/mail-clip-art_4477875.png" alt=""></a>
+            </li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <!-- <li><a href="#">Home</a></li> -->
+            <li><a href="artist.html">Artist</a></li>
+            <li><a href="doc.html">Doctor</a></li>
+            <li><a href="ideas.html">Ideas</a></li>
+            <li><a href="contactUs.html">Contact</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

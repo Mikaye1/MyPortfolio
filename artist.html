@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As an Artist</title>
+    <link rel="icon" type="image/x-icon" href="pictures/i.ico">
+    <link rel="stylesheet" href="artist.css">
+</head>
+<body>
+    <section class="banner ideaImg" id="sec">
+        <header>
+            <div class="container">
+                
+        </div>  
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+
+            <div class="content">
+                <video src="mets.mp4" autoplay="" muted="" loop=""></video>
+                <h1>Life As An Artist</h1>
+                <br>
+                <p>Mikayel Abrahamyan, known by his Artist name Misho, is one of the pioneers of Armenian hip hop music. His politically and socially conscious lyrics along with his eclectic musical style have pushed cultural boundaries, making Misho one of the most influential artists in Armenia. </p>
+                <br>
+                    <p>His art is shaped by his love for a range of genres in music and poetry, his philosophical approach to the daily struggles and strengths of his country, his education and background in medicine, and his overall curiosity and passion for life.</p>
+                    <br>
+                    <p>
+                Misho pushes the limits with a new form of experimentation in each new album, always seeking to surprise himself. Prioritizing his passion above all else, his music has always remained authentic, going against the stream, reflecting his personal evolution.
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </section>
+    
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artist.html">Artist</a></li>
+            <li><a href="doc.html">Doctor</a></li>
+            <li><a href="ideas.html">Ideas</a></li>
+            <li><a href="contactUs.html">Contact</a></li>
+        </ul>
+    </div>
+
+
+        <script type="text/javascript">
+        let video = document.querySelector('video');
+        window.addEventListener('scroll' , function(){
+            let value = 1 + window.scrollY/-500;
+            video.style.opacity = value;
+        })
+
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        } 
+    </script>
+
+</body>
+</html>

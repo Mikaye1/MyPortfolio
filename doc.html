@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="doc.css">
+    <title>As a Doctor</title>
+    <link rel="icon" type="image/x-icon" href="pictures/i.ico">
+</head>
+<body>
+    <section class="banner ideaImg" id="sec">
+        <header>
+            <div class="container">
+                
+        </div>  
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        
+
+<div class="content">
+    <h1>Doc Page</h1>
+    <div class="image-content">
+        <div class="image"><img src="pictures/doc_pics/01_edited.jpg" alt=""></div>
+        <div class="image"><img src="pictures/doc_pics/02_edited.jpg" alt=""></div>
+        <div class="image"><img src="pictures/doc_pics/03_edited.jpg" alt=""></div>
+        <div class="image"><img src="pictures/doc_pics/04_edited.jpg" alt=""></div>
+        <div class="image"><img src="pictures/doc_pics/05_edited.jpg" alt=""></div>
+        <div class="image"><img src="pictures/doc_pics/06_edited.jpg" alt=""></div>
+    </div>
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="pictures/doc_pics/01.jpg" alt="">
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, tempora totam voluptatibus incidunt dignissimos quaerat perspiciatis voluptatem? Id, voluptates? Laboriosam assumenda sit odit quas dolor eum vero, similique modi magnam impedit temporibus quos nam a dicta rem facilis beatae. Vitae ut rem, neque mollitia in itaque alias est nemo fugiat veritatis iste ea minima eaque molestias a commodi maxime cumque ex voluptas temporibus suscipit porro ullam quod. Aut, distinctio. Nemo sapiente eligendi asperiores. Beatae consequatur debitis modi alias quam placeat repellendus cum expedita cupiditate minus est fugit porro ullam rem mollitia aut dignissimos illum, necessitatibus minima. A, doloribus incidunt!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, tempora totam voluptatibus incidunt dignissimos quaerat perspiciatis voluptatem? Id, voluptates? Laboriosam assumenda sit odit quas dolor eum vero, similique modi magnam impedit temporibus quos nam a dicta rem facilis beatae. Vitae ut rem, neque mollitia in itaque alias est nemo fugiat veritatis iste ea minima eaque molestias a commodi maxime cumque ex voluptas temporibus suscipit porro ullam quod. Aut, distinctio. Nemo sapiente eligendi asperiores. Beatae consequatur debitis modi alias quam placeat repellendus cum expedita cupiditate minus est fugit porro ullam rem mollitia aut dignissimos illum, necessitatibus minima. A, doloribus incidunt!  
+        Tempora.</p>
+    
+</div>
+</section>
+<div id="navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="artist.html">Artist</a></li>
+        <li><a href="doc.html">Doctor</a></li>
+        <li><a href="ideas.html">Ideas</a></li>
+        <li><a href="contactUs.html">Contact</a></li>
+    </ul>
+</div>
+
+
+    <script type="text/javascript">
+
+document.querySelectorAll('.image-content img').forEach(image =>{
+        image.onclick = () => {
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+        }
+    });
+    document.querySelector('.popup-image span').onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'none';
+    }
+
+    
+    function toggle(){
+        var sec = document.getElementById('sec');
+        var nav = document.getElementById('navigation');
+        sec.classList.toggle('active');
+        nav.classList.toggle('active');
+    } 
+</script>
+</body>
+</html>

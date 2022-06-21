@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/ css?family=Poppins: 200, 300, 400, 500, 600, 700, 800, 900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: url('pictures/ideas_edited.jpg');
+    background-size: cover; */
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('pictures/ideas_edited.jpg');
+    background-size: cover;
+}
+.box{
+    position: relative;
+    width: 200px;
+    left: 28%;  
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 18s linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%
+    {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    
+}
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+
+}
+.wrapper div{
+    font-size: 2em;
+    margin: 20px 3px 0px 3px;
+    display: inline;
+    text-align: center;
+}
+.font_01{
+    color: rgb(15, 136, 136);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    background-color: transparent;
+
+}
+.font_02{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(15, 136, 136);
+    color: black;
+}
+.font_03{
+    color: rgb(15, 136, 136);
+    font-style: inherit;
+    font-size: 2.8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.font_04{
+    color: rgb(15, 136, 136);
+    font-weight: bold;
+    font-style: initial;
+    font-size: 1.5em;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.font_05{
+    color: rgb(15, 136, 136);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.font_05{
+    color: rgb(15, 136, 136);
+    font-family: monospace;
+    font-size: 1.5em;
+}
+.font_06{
+    color: rgb(15, 136, 136);
+    font-family: fantasy;
+    font-size: 2.2em;
+}
+.font_07{
+    color: rgb(15, 136, 136);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.font_08{
+    color: rgb(0, 0, 0);
+    background-color: rgb(15, 136, 136);
+    border-radius: 50px;
+    font-family: initial;
+}
+.font_09{
+    color: rgb(15, 136, 136);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.font_10{
+    color: rgb(15, 136, 136);
+    font-family: cursive;
+    font-size: 2.4em;
+}
+.font_11{
+    color: rgb(0, 0, 0);
+    background-color: rgb(15, 136, 136);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.9em;
+}
+.font_12{
+    color: rgb(15, 136, 136);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.font_13{
+    color: rgb(15, 136, 136);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.font_14{
+    color: rgb(15, 136, 136);
+    font-family: serif;
+    font-size: 2.9em;
+    font-style: inherit;
+}
+.home a{
+    background: rgb(15, 136, 136);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2em;
+    /* font-weight: 500;
+    font-family: 'Poppins', sans-serif; */
+    border-radius: 15px;
+    position: absolute;
+    top: 90%;
+    padding: 10px 30px;
+    margin: auto;
+    margin-top: 20px;
+    left: 45%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+
+}
+.wrapper div{
+    color: rgb(15, 136, 136);
+    font-size: 2em;
+    margin: 20px 3px 0px 3px;
+    display: inline;
+    text-align: center;
+}
+.font_01{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    background-color: transparent;
+
+}
+.font_02{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.font_03{
+    font-style: inherit;
+    font-size: 2.8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.font_04{
+    font-weight: bold;
+    font-style: initial;
+    font-size: 1.5em;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.font_05{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.font_05{
+    font-family: monospace;
+    font-size: 1.5em;
+}
+.font_06{
+    font-family: fantasy;
+    font-size: 2.2em;
+}
+.font_07{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.font_08{
+    font-family: initial;
+}
+.font_09{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.font_10{
+    font-family: cursive;
+    font-size: 2.4em;
+}
+.font_11{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.9em;
+}
+.font_12{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.font_13{
+    font-family: unset;
+}
+.font_14{
+    font-family: serif;
+    font-size: 2.9em;
+    font-style: inherit;
+}
+
+.back img{
+    width: 180px;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+}
+.vintage{
+    width: 80px;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+}
+
+@keyframes fadeInFromTop {
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes floating{
+    0%{
+        transform: translate(0%, 0%) rotate(360deg);
+        
+    }
+} */
