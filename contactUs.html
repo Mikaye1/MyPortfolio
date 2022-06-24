@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="contactUs.css">
     <link rel="icon" type="image/x-icon" href="pictures/i.ico">
 </head>
@@ -20,7 +20,7 @@
     <section class="contact">
         <div class="content">
             <h2>Contact Me</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus perferendis recusandae iste! Dolores rem, perferendis aperiam, deserunt impedit commodi officiis voluptate repellat voluptatibus id nisi minus repudiandae, eum sequi eligendi?</p>
+            <p>I don't know why I created this page because I'm sure, nobody will ever use this method to send me a message but anyway it exists...]</p>
         </div>
         <div class="containerMain">
             <div class="contactInfo">
@@ -41,18 +41,18 @@
                 </div>
             </div>
             <div class="contactForm">
-                <form action="">
+                <form action="#" method="POST" class="contF">
                     <h2>Send Message</h2>
                     <div class="inputBox">
-                        <input type="text" name="" required="">
+                        <input class="name" type="text" name="" required="">
                         <span>Full Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" required="">
+                        <input class="email" type="email" name="" required="">
                         <span>Email</span>
                     </div>
                     <div class="inputBox">
-                        <textarea required="required"></textarea>
+                        <textarea class="msg" required="required"></textarea>
                         <span>Type Your Message...</span>
                     </div>
                     <div class="inputBox">
@@ -76,17 +76,32 @@
     
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    
-        <!-- <script type="text/javascript">
-    
-    
+
+    <script>
+        const form = document.querySelector('.contF');
+        function sendMsg(e){
+            e.preventDefault();
+            
+        const name = document.querySelector('.name'),
+            email = document.querySelector('.email'),
+            msg = document.querySelector('.msg');
+
+
+
+        Email.send({
+            SecureToken : "e2c30415-5342-446b-954c-f13f5f6439a6",
+            To : 'mikayel.abrahamyan@gmail.com',
+            From : email.value,
+            Subject : "Contact Form",
+            Body : msg.value
+            }).then(
+                message => alert(message)
+            );
+                    }
+
+        form.addEventListener('submit', sendMsg);
+
         
-        function toggle(){
-            var sec = document.getElementById('sec');
-            var nav = document.getElementById('navigation');
-            sec.classList.toggle('active');
-            nav.classList.toggle('active');
-        } 
-    </script> -->
+    </script>
 </body>
 </html>
