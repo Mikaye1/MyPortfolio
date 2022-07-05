@@ -1,1 +1,2 @@
-This is my personal portfolio site. I put some stuff about me...................
+Designed and built interactive portfolio website to showcase all the projects I have worked on
+previously..
