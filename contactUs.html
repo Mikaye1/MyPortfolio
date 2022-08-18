@@ -80,32 +80,7 @@
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-    <script>
-        const form = document.querySelector('.contF');
-        function sendMsg(e){
-            e.preventDefault();
-            
-        const name = document.querySelector('.name'),
-            email = document.querySelector('.email'),
-            msg = document.querySelector('.msg');
 
-
-
-        Email.send({
-            SecureToken : "e2c30415-5342-446b-954c-f13f5f6439a6",
-            To : 'mikayel.abrahamyan@gmail.com',
-            From : email.value,
-            Subject : "Contact Form",
-            Body : msg.value
-            }).then(
-                message => alert(message)
-            );
-                    }
-
-        form.addEventListener('submit', sendMsg);
-
-        
-    </script>
 
 <script type="text/javascript">
     
